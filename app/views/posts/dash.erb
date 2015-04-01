@@ -1,13 +1,29 @@
 <% if authenticated? %>
 
+<h6> Create a Post </h6>
+
+<form action = 'posts/new/<%=@blogs.id%>'
+<div class= "submit">
+    <input type="submit" value="Create Post">
+  </div>
+    <input type = 'hidden' name = '_method' value = 'put'/>
+  <div class = "post">
+    <textarea name="text" placeholder="text" rows="5"></textarea>
+  </div>
+</form>
+
+
 <div class = "username">
 <td> <%= current_user.username %>
 
 </td>
 </div>
-  <a href = '/'><h1>Log Out </h1></a>
+  <a href = '/logout'><h1>Log Out </h1></a>
 <%  else %>
 <td>
   <a href = '/'><h1>Log Out </h1></a>
 </td>
 <% end %>
+
+
+

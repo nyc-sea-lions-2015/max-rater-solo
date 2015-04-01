@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email, unique: true, null: false
       t.string :password_digest, null: false
       t.references :blog
-
+      t.references :post
       t.timestamps
     end
   end

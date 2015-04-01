@@ -39,7 +39,27 @@ put '/login' do
 
 end
 
+get '/logout' do
+
+session[:user_id] = nil
+
+redirect '/'
+
+end
+
 get '/dashboard' do
+ @blogs = current_user.blog
 
 erb :'posts/dash'
 end
+
+get '/:username/:blog_id' do
+  @user = User.find_by(username: params[:username])
+  @blogs = Blog.find_by(id: params[:blog_id])
+
+erb :'posts/dash'
+end
+
+
+
+
