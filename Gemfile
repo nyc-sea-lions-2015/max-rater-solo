@@ -14,6 +14,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'sinatra-flash'
+
 gem 'bcrypt'
 
 group :test do
