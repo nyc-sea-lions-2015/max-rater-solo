@@ -1,6 +1,6 @@
 get '/' do
 
-@user = User.all
+@users = User.all
 
 erb :display
 

@@ -1,4 +1,22 @@
+h6 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.portal {
+  text-align: center;
+}
+
+html {
+background-color: white;
+}
+
 p {
-font-size: 100px;
-text-align: center;
+  font-size: 100px;
+  text-align: center;
+}
+
+h1 {
+  text-align: right;
+  margin-right: 20px;
 }
