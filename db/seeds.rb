@@ -1,8 +1,8 @@
-king = User.create(username: "king kruel" , email: "kkruel@gmail.com" , password: "abc")
+king = User.create(username: "kingkruel" , email: "kkruel@gmail.com" , password: "abc")
 
-kanye = User.create(username: "kanye west" , email: "kwest@gmail.com" , password: "123")
+kanye = User.create(username: "kanyewest" , email: "kwest@gmail.com" , password: "123")
 
-imogen = User.create(username: "imogen heap", email: "iheap@gmail.com", password:"xyz")
+imogen = User.create(username: "imogenheap", email: "iheap@gmail.com", password:"xyz")
 
 king_blog = Blog.create(name: king.username, user_id: king.id)
 
