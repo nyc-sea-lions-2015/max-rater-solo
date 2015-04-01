@@ -1,7 +1,3 @@
-.post {
-  text-align: center;
-}
-
 h6 {
   font-size: 15px;
   text-align: center;
@@ -15,13 +11,25 @@ h6 {
   text-align: center;
 }
 
+.postit {
+  text-align: center;
+}
 .portal {
+  text-align: center;
+}
+.bubble {
+  margin-top: 100px;
   text-align: center;
 }
 
 html {
 background-color: white;
 }
+
+.post {
+  text-align: center;
+}
+
 
 p {
   font-size: 100px;
