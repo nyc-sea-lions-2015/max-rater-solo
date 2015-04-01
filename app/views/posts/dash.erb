@@ -1,4 +1,13 @@
-<a href = '/'><h1>Log Out </h1></a>
+<% if authenticated? %>
 
+<div class = "username">
+<td> <%= current_user.username %>
 
-<p> Welcome </p>
+</td>
+</div>
+  <a href = '/'><h1>Log Out </h1></a>
+<%  else %>
+<td>
+  <a href = '/'><h1>Log Out </h1></a>
+</td>
+<% end %>

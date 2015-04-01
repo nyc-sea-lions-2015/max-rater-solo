@@ -1,7 +1,5 @@
 get '/' do
 
-@users = User.all
-
 erb :display
 
 end
@@ -30,7 +28,7 @@ put '/login' do
     session[:user_id] = @user.id
     redirect '/dashboard'
   else
-    flash[:error] = "Login Failed"
+    flash[:error] = "Your email or password were incorrect"
     redirect '/login'
   end
 
