@@ -66,6 +66,13 @@ redirect "/post/new/#{params[:blog_id]}"
 
 end
 
+delete '/posts/:id/delete' do
+
+  @post = Post.find(params[:id])
+  @post.destroy
+
+redirect back
+end
 
 
 

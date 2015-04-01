@@ -2,8 +2,15 @@
   <a href = '/dashboard'><input type="submit" value = "Dashboard"> </a>
 </div>
 
-<% @blogs.posts.each do |blog| %>
-<div class= "text"><%=blog.text %></div>
+<% @blogs.posts.each do |post| %>
+<div class= "text"><%=post.text %></div>
+<form method = 'post' class = 'delete' action = '/posts/<%=post.id%>/delete'>
+<input type = "hidden" name="_method" value = "DELETE">
+<input type="submit" value="Delete">
+</form>
+
+</div>
 <% end %>
+
 
 
