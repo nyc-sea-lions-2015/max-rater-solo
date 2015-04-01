@@ -53,13 +53,18 @@ get '/dashboard' do
 erb :'posts/dash'
 end
 
-get '/:username/:blog_id' do
-  @user = User.find_by(username: params[:username])
+get '/post/new/:blog_id' do
   @blogs = Blog.find_by(id: params[:blog_id])
 
-erb :'posts/dash'
+erb :'posts/show'
 end
 
+post '/post/new/:blog_id' do
+@post = Post.create(text: params[:text], blog_id: params[:blog_id])
+
+redirect "/post/new/#{params[:blog_id]}"
+
+end
 
 
 

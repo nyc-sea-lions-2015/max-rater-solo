@@ -5,8 +5,11 @@
 
 </td>
 </div>
-<form >
+<div>
   <a href = '/logout'><h1>Log Out </h1></a>
+</div>
+<form action = '/post/new/<%=@blogs.id%>' method='post'>
+  <h6>Create a Post</h6>
 <div class = "bubble">
   <textarea name="text" placeholder="text" rows="5"></textarea>
 </div>
